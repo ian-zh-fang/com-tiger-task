@@ -1,0 +1,197 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.ConsoleTest", "COM.TIGER.TASK.ConsoleTest\COM.TIGER.TASK.ConsoleTest.csproj", "{9480F04B-79E1-4283-B530-907E26343B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.Task", "COM.TIGER.TASK.Task\COM.TIGER.TASK.Task.csproj", "{32596C5D-6748-4320-83CF-F4A6490305CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization", "COM.TIGER.TASK.DAT.Synchronization\COM.TIGER.TASK.DAT.Synchronization.csproj", "{182EE1AE-AC55-4AD0-BD53-F44DCD9B88C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.Configuration", "COM.TIGER.TASK.Configuration\COM.TIGER.TASK.Configuration.csproj", "{7A2B8C94-A13F-4633-8E82-85CA65D72C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.Dao", "COM.TIGER.TASK.DAT.Synchronization.Dao\COM.TIGER.TASK.DAT.Synchronization.Dao.csproj", "{09FE5F5D-DC3A-40E2-8BB7-7B4B826DCB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.AJJBXX", "COM.TIGER.TASK.DAT.Synchronization.AJJBXX\COM.TIGER.TASK.DAT.Synchronization.AJJBXX.csproj", "{CEC14D8E-4247-4933-A622-E50AEBF39720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.DWCYRY", "COM.TIGER.TASK.DAT.Synchronization.DWCYRY\COM.TIGER.TASK.DAT.Synchronization.DWCYRY.csproj", "{21A266E8-00B3-4CAB-A756-BE4E50FEE541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.DWJBXX", "COM.TIGER.TASK.DAT.Synchronization.DWJBXX\COM.TIGER.TASK.DAT.Synchronization.DWJBXX.csproj", "{6A13DDC9-0974-4ED5-9344-EF8780D637F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.HJRK", "COM.TIGER.TASK.DAT.Synchronization.HJRK\COM.TIGER.TASK.DAT.Synchronization.HJRK.csproj", "{290C6886-6A2E-4D1A-B719-ECFA5195DD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.HOTEL", "COM.TIGER.TASK.DAT.Synchronization.HOTEL\COM.TIGER.TASK.DAT.Synchronization.HOTEL.csproj", "{97E04646-7FB9-4EEA-9B66-F926F0515051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY", "COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY\COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY.csproj", "{A972A69E-DE18-4DEC-85F8-8B6751450997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB", "COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB\COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB.csproj", "{E795080C-56B2-4E53-A62A-D34E62C39B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.JWRK", "COM.TIGER.TASK.DAT.Synchronization.JWRK\COM.TIGER.TASK.DAT.Synchronization.JWRK.csproj", "{CE176C19-89C3-4FB7-B4BE-BEAAB7FB5729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.YJBJ", "COM.TIGER.TASK.DAT.Synchronization.YJBJ\COM.TIGER.TASK.DAT.Synchronization.YJBJ.csproj", "{C72EF528-BCA3-430A-B7F9-14C607D155A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.DAT.Synchronization.ZZRK", "COM.TIGER.TASK.DAT.Synchronization.ZZRK\COM.TIGER.TASK.DAT.Synchronization.ZZRK.csproj", "{805F4BEE-E45F-433D-A083-4F1E325DEEF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SyncModules", "SyncModules", "{02769330-0EB6-496B-ADF1-1AB08E214D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.Service", "COM.TIGER.TASK.Service\COM.TIGER.TASK.Service.csproj", "{CA9E7FBE-A389-44F9-BBF2-02865D27B908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.TIGER.TASK.ServiceConsoleForm", "COM.TIGER.TASK.ServiceConsoleForm\COM.TIGER.TASK.ServiceConsoleForm.csproj", "{6BC2ACD2-9995-4F92-A859-0454A3444571}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 18
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://115.239.252.70:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = COM.TIGER.TASK.Configuration\\COM.TIGER.TASK.Configuration.csproj
+		SccProjectName1 = COM.TIGER.TASK.Configuration
+		SccLocalPath1 = COM.TIGER.TASK.Configuration
+		SccProjectUniqueName2 = COM.TIGER.TASK.ConsoleTest\\COM.TIGER.TASK.ConsoleTest.csproj
+		SccProjectName2 = COM.TIGER.TASK.ConsoleTest
+		SccLocalPath2 = COM.TIGER.TASK.ConsoleTest
+		SccProjectUniqueName3 = COM.TIGER.TASK.DAT.Synchronization.AJJBXX\\COM.TIGER.TASK.DAT.Synchronization.AJJBXX.csproj
+		SccProjectTopLevelParentUniqueName3 = COM.TIGER.TASK.sln
+		SccProjectName3 = COM.TIGER.TASK.DAT.Synchronization.AJJBXX
+		SccLocalPath3 = COM.TIGER.TASK.DAT.Synchronization.AJJBXX
+		SccProjectUniqueName4 = COM.TIGER.TASK.DAT.Synchronization.Dao\\COM.TIGER.TASK.DAT.Synchronization.Dao.csproj
+		SccProjectName4 = COM.TIGER.TASK.DAT.Synchronization.Dao
+		SccLocalPath4 = COM.TIGER.TASK.DAT.Synchronization.Dao
+		SccProjectUniqueName5 = COM.TIGER.TASK.DAT.Synchronization.DWCYRY\\COM.TIGER.TASK.DAT.Synchronization.DWCYRY.csproj
+		SccProjectTopLevelParentUniqueName5 = COM.TIGER.TASK.sln
+		SccProjectName5 = COM.TIGER.TASK.DAT.Synchronization.DWCYRY
+		SccLocalPath5 = COM.TIGER.TASK.DAT.Synchronization.DWCYRY
+		SccProjectUniqueName6 = COM.TIGER.TASK.DAT.Synchronization.DWJBXX\\COM.TIGER.TASK.DAT.Synchronization.DWJBXX.csproj
+		SccProjectTopLevelParentUniqueName6 = COM.TIGER.TASK.sln
+		SccProjectName6 = COM.TIGER.TASK.DAT.Synchronization.DWJBXX
+		SccLocalPath6 = COM.TIGER.TASK.DAT.Synchronization.DWJBXX
+		SccProjectUniqueName7 = COM.TIGER.TASK.DAT.Synchronization.HJRK\\COM.TIGER.TASK.DAT.Synchronization.HJRK.csproj
+		SccProjectTopLevelParentUniqueName7 = COM.TIGER.TASK.sln
+		SccProjectName7 = COM.TIGER.TASK.DAT.Synchronization.HJRK
+		SccLocalPath7 = COM.TIGER.TASK.DAT.Synchronization.HJRK
+		SccProjectUniqueName8 = COM.TIGER.TASK.DAT.Synchronization.HOTEL\\COM.TIGER.TASK.DAT.Synchronization.HOTEL.csproj
+		SccProjectTopLevelParentUniqueName8 = COM.TIGER.TASK.sln
+		SccProjectName8 = COM.TIGER.TASK.DAT.Synchronization.HOTEL
+		SccLocalPath8 = COM.TIGER.TASK.DAT.Synchronization.HOTEL
+		SccProjectUniqueName9 = COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY\\COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY.csproj
+		SccProjectTopLevelParentUniqueName9 = COM.TIGER.TASK.sln
+		SccProjectName9 = COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY
+		SccLocalPath9 = COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY
+		SccProjectUniqueName10 = COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB\\COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB.csproj
+		SccProjectTopLevelParentUniqueName10 = COM.TIGER.TASK.sln
+		SccProjectName10 = COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
+		SccLocalPath10 = COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
+		SccProjectUniqueName11 = COM.TIGER.TASK.DAT.Synchronization.JWRK\\COM.TIGER.TASK.DAT.Synchronization.JWRK.csproj
+		SccProjectTopLevelParentUniqueName11 = COM.TIGER.TASK.sln
+		SccProjectName11 = COM.TIGER.TASK.DAT.Synchronization.JWRK
+		SccLocalPath11 = COM.TIGER.TASK.DAT.Synchronization.JWRK
+		SccProjectUniqueName12 = COM.TIGER.TASK.DAT.Synchronization.YJBJ\\COM.TIGER.TASK.DAT.Synchronization.YJBJ.csproj
+		SccProjectTopLevelParentUniqueName12 = COM.TIGER.TASK.sln
+		SccProjectName12 = COM.TIGER.TASK.DAT.Synchronization.YJBJ
+		SccLocalPath12 = COM.TIGER.TASK.DAT.Synchronization.YJBJ
+		SccProjectUniqueName13 = COM.TIGER.TASK.DAT.Synchronization.ZZRK\\COM.TIGER.TASK.DAT.Synchronization.ZZRK.csproj
+		SccProjectTopLevelParentUniqueName13 = COM.TIGER.TASK.sln
+		SccProjectName13 = COM.TIGER.TASK.DAT.Synchronization.ZZRK
+		SccLocalPath13 = COM.TIGER.TASK.DAT.Synchronization.ZZRK
+		SccProjectUniqueName14 = COM.TIGER.TASK.DAT.Synchronization\\COM.TIGER.TASK.DAT.Synchronization.csproj
+		SccProjectName14 = COM.TIGER.TASK.DAT.Synchronization
+		SccLocalPath14 = COM.TIGER.TASK.DAT.Synchronization
+		SccProjectUniqueName15 = COM.TIGER.TASK.Service\\COM.TIGER.TASK.Service.csproj
+		SccProjectName15 = COM.TIGER.TASK.Service
+		SccLocalPath15 = COM.TIGER.TASK.Service
+		SccProjectUniqueName16 = COM.TIGER.TASK.ServiceConsoleForm\\COM.TIGER.TASK.ServiceConsoleForm.csproj
+		SccProjectName16 = COM.TIGER.TASK.ServiceConsoleForm
+		SccLocalPath16 = COM.TIGER.TASK.ServiceConsoleForm
+		SccProjectUniqueName17 = COM.TIGER.TASK.Task\\COM.TIGER.TASK.Task.csproj
+		SccProjectName17 = COM.TIGER.TASK.Task
+		SccLocalPath17 = COM.TIGER.TASK.Task
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9480F04B-79E1-4283-B530-907E26343B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9480F04B-79E1-4283-B530-907E26343B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9480F04B-79E1-4283-B530-907E26343B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9480F04B-79E1-4283-B530-907E26343B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32596C5D-6748-4320-83CF-F4A6490305CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32596C5D-6748-4320-83CF-F4A6490305CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32596C5D-6748-4320-83CF-F4A6490305CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32596C5D-6748-4320-83CF-F4A6490305CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182EE1AE-AC55-4AD0-BD53-F44DCD9B88C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182EE1AE-AC55-4AD0-BD53-F44DCD9B88C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182EE1AE-AC55-4AD0-BD53-F44DCD9B88C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182EE1AE-AC55-4AD0-BD53-F44DCD9B88C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2B8C94-A13F-4633-8E82-85CA65D72C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2B8C94-A13F-4633-8E82-85CA65D72C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2B8C94-A13F-4633-8E82-85CA65D72C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2B8C94-A13F-4633-8E82-85CA65D72C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09FE5F5D-DC3A-40E2-8BB7-7B4B826DCB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FE5F5D-DC3A-40E2-8BB7-7B4B826DCB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FE5F5D-DC3A-40E2-8BB7-7B4B826DCB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FE5F5D-DC3A-40E2-8BB7-7B4B826DCB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC14D8E-4247-4933-A622-E50AEBF39720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC14D8E-4247-4933-A622-E50AEBF39720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC14D8E-4247-4933-A622-E50AEBF39720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC14D8E-4247-4933-A622-E50AEBF39720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A266E8-00B3-4CAB-A756-BE4E50FEE541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A266E8-00B3-4CAB-A756-BE4E50FEE541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A266E8-00B3-4CAB-A756-BE4E50FEE541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A266E8-00B3-4CAB-A756-BE4E50FEE541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A13DDC9-0974-4ED5-9344-EF8780D637F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A13DDC9-0974-4ED5-9344-EF8780D637F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A13DDC9-0974-4ED5-9344-EF8780D637F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A13DDC9-0974-4ED5-9344-EF8780D637F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290C6886-6A2E-4D1A-B719-ECFA5195DD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290C6886-6A2E-4D1A-B719-ECFA5195DD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290C6886-6A2E-4D1A-B719-ECFA5195DD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290C6886-6A2E-4D1A-B719-ECFA5195DD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E04646-7FB9-4EEA-9B66-F926F0515051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E04646-7FB9-4EEA-9B66-F926F0515051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E04646-7FB9-4EEA-9B66-F926F0515051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E04646-7FB9-4EEA-9B66-F926F0515051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A972A69E-DE18-4DEC-85F8-8B6751450997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A972A69E-DE18-4DEC-85F8-8B6751450997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A972A69E-DE18-4DEC-85F8-8B6751450997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A972A69E-DE18-4DEC-85F8-8B6751450997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E795080C-56B2-4E53-A62A-D34E62C39B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E795080C-56B2-4E53-A62A-D34E62C39B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E795080C-56B2-4E53-A62A-D34E62C39B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E795080C-56B2-4E53-A62A-D34E62C39B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE176C19-89C3-4FB7-B4BE-BEAAB7FB5729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE176C19-89C3-4FB7-B4BE-BEAAB7FB5729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE176C19-89C3-4FB7-B4BE-BEAAB7FB5729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE176C19-89C3-4FB7-B4BE-BEAAB7FB5729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C72EF528-BCA3-430A-B7F9-14C607D155A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72EF528-BCA3-430A-B7F9-14C607D155A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72EF528-BCA3-430A-B7F9-14C607D155A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72EF528-BCA3-430A-B7F9-14C607D155A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805F4BEE-E45F-433D-A083-4F1E325DEEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805F4BEE-E45F-433D-A083-4F1E325DEEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805F4BEE-E45F-433D-A083-4F1E325DEEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805F4BEE-E45F-433D-A083-4F1E325DEEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9E7FBE-A389-44F9-BBF2-02865D27B908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9E7FBE-A389-44F9-BBF2-02865D27B908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9E7FBE-A389-44F9-BBF2-02865D27B908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9E7FBE-A389-44F9-BBF2-02865D27B908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC2ACD2-9995-4F92-A859-0454A3444571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC2ACD2-9995-4F92-A859-0454A3444571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC2ACD2-9995-4F92-A859-0454A3444571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC2ACD2-9995-4F92-A859-0454A3444571}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21A266E8-00B3-4CAB-A756-BE4E50FEE541} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{6A13DDC9-0974-4ED5-9344-EF8780D637F7} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{290C6886-6A2E-4D1A-B719-ECFA5195DD11} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{97E04646-7FB9-4EEA-9B66-F926F0515051} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{A972A69E-DE18-4DEC-85F8-8B6751450997} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{E795080C-56B2-4E53-A62A-D34E62C39B76} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{CE176C19-89C3-4FB7-B4BE-BEAAB7FB5729} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{C72EF528-BCA3-430A-B7F9-14C607D155A2} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{805F4BEE-E45F-433D-A083-4F1E325DEEF5} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+		{CEC14D8E-4247-4933-A622-E50AEBF39720} = {02769330-0EB6-496B-ADF1-1AB08E214D63}
+	EndGlobalSection
+EndGlobal

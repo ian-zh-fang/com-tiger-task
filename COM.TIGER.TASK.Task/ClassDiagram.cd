@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="COM.TIGER.TASK.Task.JobBaseHandler">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEABAAAAA=</HashCode>
+      <FileName>JobBaseHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="COM.TIGER.TASK.Task.TaskHandler">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgECAIAQAAAAAAAAAAAAABAAAAIAA=</HashCode>
+      <FileName>TaskHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Logger" />
+      <Field Name="_Scheduler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="COM.TIGER.TASK.Task.SyncEventArg">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAQAAAAAAAAAAAAAAAAAAABAAAACBIAAAIAAgAAA=</HashCode>
+      <FileName>SyncEventArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Quartz.IJob" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Common.Logging.ILog" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Quartz.IScheduler" Collapsed="true">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
