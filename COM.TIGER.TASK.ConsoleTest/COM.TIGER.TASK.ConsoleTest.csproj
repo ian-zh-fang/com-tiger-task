@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9480F04B-79E1-4283-B530-907E26343B98}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COM.TIGER.TASK.ConsoleTest</RootNamespace>
+    <AssemblyName>COM.TIGER.TASK.ConsoleTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5, Version=1.1.0.0, Culture=neutral, PublicKeyToken=06a1b38866503b69, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quartz.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\COM.TIGER.TASK.Configuration\COM.TIGER.TASK.Configuration.csproj">
+      <Project>{7a2b8c94-a13f-4633-8e82-85ca65d72c9e}</Project>
+      <Name>COM.TIGER.TASK.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.AJJBXX\COM.TIGER.TASK.DAT.Synchronization.AJJBXX.csproj">
+      <Project>{cec14d8e-4247-4933-a622-e50aebf39720}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.AJJBXX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.Dao\COM.TIGER.TASK.DAT.Synchronization.Dao.csproj">
+      <Project>{09fe5f5d-dc3a-40e2-8bb7-7b4b826dcb80}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.DWCYRY\COM.TIGER.TASK.DAT.Synchronization.DWCYRY.csproj">
+      <Project>{21a266e8-00b3-4cab-a756-be4e50fee541}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.DWCYRY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.DWJBXX\COM.TIGER.TASK.DAT.Synchronization.DWJBXX.csproj">
+      <Project>{6a13ddc9-0974-4ed5-9344-ef8780d637f7}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.DWJBXX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.HJRK\COM.TIGER.TASK.DAT.Synchronization.HJRK.csproj">
+      <Project>{290c6886-6a2e-4d1a-b719-ecfa5195dd11}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.HJRK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY\COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY.csproj">
+      <Project>{a972a69e-de18-4dec-85f8-8b6751450997}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.HOTELSTAY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.HOTEL\COM.TIGER.TASK.DAT.Synchronization.HOTEL.csproj">
+      <Project>{97e04646-7fb9-4eea-9b66-f926f0515051}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.HOTEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB\COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB.csproj">
+      <Project>{e795080c-56b2-4e53-a62a-d34e62c39b76}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.JWRK\COM.TIGER.TASK.DAT.Synchronization.JWRK.csproj">
+      <Project>{ce176c19-89c3-4fb7-b4be-beaab7fb5729}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.JWRK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.YJBJ\COM.TIGER.TASK.DAT.Synchronization.YJBJ.csproj">
+      <Project>{c72ef528-bca3-430a-b7f9-14c607d155a2}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.YJBJ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.ZZRK\COM.TIGER.TASK.DAT.Synchronization.ZZRK.csproj">
+      <Project>{805f4bee-e45f-433d-a083-4f1e325deef5}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.ZZRK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization\COM.TIGER.TASK.DAT.Synchronization.csproj">
+      <Project>{182ee1ae-ac55-4ad0-bd53-f44dcd9b88c7}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.Task\COM.TIGER.TASK.Task.csproj">
+      <Project>{32596c5d-6748-4320-83cf-f4a6490305cf}</Project>
+      <Name>COM.TIGER.TASK.Task</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="quartz_jobs.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
