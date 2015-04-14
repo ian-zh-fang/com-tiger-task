@@ -12,7 +12,7 @@ namespace COM.TIGER.TASK.DAT.Synchronization.Dao
 
         static OracleHandler()
         {
-            CONNECTIONSTRINGFORMAT = "Data Source={0};User Id={1};Password={2}";
+            CONNECTIONSTRINGFORMAT = "Data Source={0};User ID={1};Password={2}";
         }
 
         public OracleHandler(string connectionString)
@@ -21,9 +21,9 @@ namespace COM.TIGER.TASK.DAT.Synchronization.Dao
             
         }
 
-        public OracleHandler(string dbSource, string userId, string pwd)
+        public OracleHandler(string serviceName, string userid, string pwd)
         {
-            dbConnectionString = string.Format(CONNECTIONSTRINGFORMAT, dbSource, userId, pwd);
+            dbConnectionString = string.Format(CONNECTIONSTRINGFORMAT, serviceName, userid, pwd);
         }
 
         protected override Microsoft.Practices.EnterpriseLibrary.Data.Database CreateDB()

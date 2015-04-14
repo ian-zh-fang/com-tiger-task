@@ -35,23 +35,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C5, Version=1.1.0.0, Culture=neutral, PublicKeyToken=06a1b38866503b69, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\C5.dll</HintPath>
+    <Reference Include="C5">
+      <HintPath>..\..\..\ClassLib\Quartz2.0\C5.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Common.Logging.dll</HintPath>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\ClassLib\Quartz2.0\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging.Log4Net">
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Common.Logging.Log4Net.dll</HintPath>
+      <HintPath>..\..\..\ClassLib\Quartz2.0\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\log4net.dll</HintPath>
+      <HintPath>..\..\..\ClassLib\Quartz2.0\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Quartz, Version=2.0.0.400, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Quartz.dll</HintPath>
+    <Reference Include="Quartz">
+      <HintPath>..\..\..\ClassLib\Quartz2.0\Quartz.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -71,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\COM.TIGER.TASK.Configuration\COM.TIGER.TASK.Configuration.csproj">

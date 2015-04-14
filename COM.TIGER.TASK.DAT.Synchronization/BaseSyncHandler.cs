@@ -117,7 +117,10 @@ namespace COM.TIGER.TASK.DAT.Synchronization
                 if (!reader.IsDBNull(i) && property != null && property.CanWrite)
                 {
                     var obj = reader.GetValue(i);
-                    property.SetValue(t, obj, null);
+                    if (obj != null)
+                    {
+                        property.SetValue(t, obj, null);
+                    }
                 }
             }
 

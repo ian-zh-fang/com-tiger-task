@@ -22,16 +22,18 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
 
                 if (!string.IsNullOrWhiteSpace(maxnum))
                 {
+                    dataFromCmdString = dataFromCmdString.ToLower();
                     if (dataFromCmdString.Contains(" where "))
-                        dataFromCmdString = string.Format("{0} and JJDBH > {1}", dataFromCmdString, maxnum);
+                        dataFromCmdString = string.Format("{0} and BJSJ > TO_DATE('{1}', 'yyyy-mm-dd hh24:mi:ss')", dataFromCmdString, maxnum);
                     else
-                        dataFromCmdString = string.Format("{0} where JJDBH > {1}", dataFromCmdString, maxnum);
+                        dataFromCmdString = string.Format("{0} where BJSJ > TO_DATE('{1}', 'yyyy-mm-dd hh24:mi:ss')", dataFromCmdString, maxnum);
                 }
 
                 base.Executed(dbFrom, dbTarget, dataFromCmdString);
             }
             catch (Exception e) 
             {
+                Console.WriteLine(e.Message);
                 _eventContext = new Task.SyncEventArg(this, Task.SyncEventLevel.EXCEPTION, e, "错误");
                 EventTigger();
             }
@@ -50,7 +52,8 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
                 t.TypeID = CheckParam(dbTarget, t.BJFSDM, out typename);
                 t.TypeName = typename;
 
-                dbTarget.ExecuteNonQuery(t.InsertCmd());
+                string cmdStr = t.InsertCmd();
+                dbTarget.ExecuteNonQuery(cmdStr);
             }
             catch (Exception e) { Console.WriteLine("错误：{0}", e.Message); }
         }
@@ -62,7 +65,7 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
 
         public static string GetMaxCmd()
         {
-            return string.Format("select max(Num) from {0}", "Pgis_JCJ_JJDB");
+            return string.Format("select max(AlarmTime) from {0}", "Pgis_JCJ_JJDB");
         }
 
         private int CheckParam(Dao.DataHandler db, string code, out string name)

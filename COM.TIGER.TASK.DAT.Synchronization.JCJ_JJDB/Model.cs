@@ -30,8 +30,9 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
         //报警坐标 ——必填 
         public string GIS_Y { get; set; }
 
+        private DateTime _dTime = DateTime.Now;
         //报警时间（年月日） ——必填
-        public string BJSJ { get; set; }
+        public DateTime BJSJ { get { return _dTime; } set { _dTime = value; } }
 
         //行政区划（派出所）
         public string GXDWDM { get; set; }
@@ -51,14 +52,23 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
 
         public string InsertCmd()
         {
+            double x = 0.0d, y = 0.0d;
+            double.TryParse(GIS_X, out x);
+            double.TryParse(GIS_Y, out y);
+            Point p = ELatLng2EPoint(x, y);
+
             var fields = new string[] 
             {
-                "Num,TypeID", "TypeName", "Tel", "AlarmMan", "Location", "AlarmTime", "Token"
+                "Num,TypeID", "TypeName", "Tel", "AlarmMan", "Location", "X", "Y", "AlarmTime", "Token"
             };
+            string str = BJSJ.ToString("yyyy-MM-dd HH:mm:ss");
             var values = new string[] 
             {
-                ParseString(JJDBH), TypeID.ToString(), ParseString(TypeName), ParseString(BJDH), 
-                ParseString(BJRXM), ParseString(SFDD), ParseDate(BJSJ), ParseString(JJDBH)
+                ParseString(JJDBH), TypeID.ToString(), 
+                ParseString(TypeName), ParseString(BJDH), 
+                ParseString(BJRXM), ParseString(SFDD),
+                string.Format("'{0}'", p.X),string.Format("'{0}'", p.Y),
+                ParseString(str), ParseString(JJDBH)
             };
 
             return Insert(fields, values);

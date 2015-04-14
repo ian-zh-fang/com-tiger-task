@@ -36,19 +36,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C5">
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\C5.dll</HintPath>
+      <HintPath>..\..\..\ClassLib\Quartz2.0\C5.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging">
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Common.Logging.dll</HintPath>
+      <HintPath>..\..\..\ClassLib\Quartz2.0\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging.Log4Net">
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Common.Logging.Log4Net.dll</HintPath>
+      <HintPath>..\..\..\ClassLib\Quartz2.0\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\log4net.dll</HintPath>
+      <HintPath>..\..\..\ClassLib\Quartz2.0\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Quartz">
-      <HintPath>..\..\..\..\..\common\dll\Quartz\Lib\Quartz.dll</HintPath>
+      <HintPath>..\..\..\ClassLib\Quartz2.0\Quartz.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

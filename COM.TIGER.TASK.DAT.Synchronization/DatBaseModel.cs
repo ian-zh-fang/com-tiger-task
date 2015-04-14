@@ -7,6 +7,22 @@ namespace COM.TIGER.TASK.DAT.Synchronization
 {
     public abstract class DatBaseModel
     {
+        private readonly static double Lat_Intercept = 28.1295295988415d;
+        private readonly static double Lat_Variable1 = 0.0000013749824444732d;
+        private readonly static double Lat_Variable2 = -1.96814028627638E-06d;
+
+        private readonly static double Lng_Intercept = 106.779551091342d;
+        private readonly static double Lng_Variable1 = 1.65108712853934E-06d;
+        private readonly static double Lng_Variable2 = 2.57289803037774E-06d;
+
+        private readonly static double X_Intercept = -41625228.1212446d;
+        private readonly static double X_Variable1 = 379077.48425634d;
+        private readonly static double X_Variable2 = 289961.487137384d;
+
+        private readonly static double Y_Intercept = -14787167.9659441d;
+        private readonly static double Y_Variable1 = -243261.514199763d;
+        private readonly static double Y_Variable2 = 202566.881067585d;
+
         protected abstract string TABLENAME { get; }
 
         protected virtual string ParseDate(string datestr)
@@ -84,5 +100,46 @@ namespace COM.TIGER.TASK.DAT.Synchronization
 
             return string.Format("dbo.fun_getPYFirst('{0}')", str);
         }
+        
+        /// <summary>
+        /// 经纬度坐标转 Alagis 坐标
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+        protected Point ELatLng2EPoint(double x, double y)
+        {
+            Point point = new Point()
+            {
+                X = (X_Variable1 * x) + (X_Variable2 * y) + X_Intercept,
+                Y = (Y_Variable1 * y) + (Y_Variable2 * y) + Y_Intercept
+            };
+
+            return point;
+        }
+
+        /// <summary>
+        /// Alagis 坐标转经纬度坐标
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+        protected Point EPoint2ELatLng(double x, double y)
+        {
+            Point point = new Point()
+            {
+                X = (Lat_Variable1 * x) + (Lat_Variable2 * y) + Lat_Intercept,
+                Y = (Lng_Variable1 * y) + (Lng_Variable1 * y) + Lng_Intercept
+            };
+
+            return point;
+        }
+    }
+
+    public class Point
+    {
+        public double X { get; set; }
+
+        public double Y { get; set; }
     }
 }
