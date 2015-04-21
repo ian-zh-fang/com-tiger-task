@@ -107,12 +107,12 @@ namespace COM.TIGER.TASK.DAT.Synchronization
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <returns></returns>
-        protected Point ELatLng2EPoint(double x, double y)
+        protected virtual Point ELatLng2EPoint(double x, double y)
         {
             Point point = new Point()
             {
                 X = (X_Variable1 * x) + (X_Variable2 * y) + X_Intercept,
-                Y = (Y_Variable1 * y) + (Y_Variable2 * y) + Y_Intercept
+                Y = (Y_Variable1 * x) + (Y_Variable2 * y) + Y_Intercept
             };
 
             return point;
@@ -124,12 +124,12 @@ namespace COM.TIGER.TASK.DAT.Synchronization
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <returns></returns>
-        protected Point EPoint2ELatLng(double x, double y)
+        protected virtual Point EPoint2ELatLng(double x, double y)
         {
             Point point = new Point()
             {
                 X = (Lat_Variable1 * x) + (Lat_Variable2 * y) + Lat_Intercept,
-                Y = (Lng_Variable1 * y) + (Lng_Variable1 * y) + Lng_Intercept
+                Y = (Lng_Variable1 * x) + (Lng_Variable1 * y) + Lng_Intercept
             };
 
             return point;
