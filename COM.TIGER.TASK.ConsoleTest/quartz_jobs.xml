@@ -98,6 +98,15 @@
       <durable>true</durable>
       <recover>false</recover>
     </job>
+    <!--GPSJob,GpsJobGroup-->
+    <job>
+      <name>GPSJob</name>
+      <group>GpsJobGroup</group>
+      <description>GPS单兵作战</description>
+      <job-type>COM.TIGER.TASK.DAT.Synchronization.GPSTask.Job,COM.TIGER.TASK.DAT.Synchronization.GPSTask</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
 
     <!--触发器 每30秒执行一次任务，一键报警-->
     <!--<trigger>
@@ -111,7 +120,7 @@
     </trigger>-->
     
     <!--触发器 每30秒执行一次任务，三台合一-->
-    <trigger>
+    <!--<trigger>
       <cron>
         <name>JobTrigger2</name>
         <group>SyncJobTriggerGroup</group>
@@ -119,7 +128,7 @@
         <job-group>JCJJJDBJobGroup</job-group>
         <cron-expression>0/30 * * * * ?</cron-expression>
       </cron>
-    </trigger>
+    </trigger>-->
 
     <!--触发器 每天午夜11:30执行一次任务，暂住人口-->
     <!--<trigger>
@@ -208,6 +217,17 @@
         <cron-expression>0 0 1 * * ?</cron-expression>
       </cron>
     </trigger>-->
+
+    <!--触发器 每30秒执行一次任务，三台合一-->
+    <trigger>
+      <cron>
+        <name>GpsJobTrigger</name>
+        <group>SyncJobTriggerGroup</group>
+        <job-name>GPSJob</job-name>
+        <job-group>GpsJobGroup</job-group>
+        <cron-expression>0/30 * * * * ?</cron-expression>
+      </cron>
+    </trigger>
 
     <!--定时任务时间设置说明-->
     <!--    

@@ -122,6 +122,10 @@
       <Project>{6a13ddc9-0974-4ed5-9344-ef8780d637f7}</Project>
       <Name>COM.TIGER.TASK.DAT.Synchronization.DWJBXX</Name>
     </ProjectReference>
+    <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.GPSTask\COM.TIGER.TASK.DAT.Synchronization.GPSTask.csproj">
+      <Project>{c15531ae-f624-41ef-a38f-4807d19f3831}</Project>
+      <Name>COM.TIGER.TASK.DAT.Synchronization.GPSTask</Name>
+    </ProjectReference>
     <ProjectReference Include="..\COM.TIGER.TASK.DAT.Synchronization.HJRK\COM.TIGER.TASK.DAT.Synchronization.HJRK.csproj">
       <Project>{290c6886-6a2e-4d1a-b719-ecfa5195dd11}</Project>
       <Name>COM.TIGER.TASK.DAT.Synchronization.HJRK</Name>

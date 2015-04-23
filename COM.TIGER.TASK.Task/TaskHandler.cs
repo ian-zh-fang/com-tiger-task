@@ -119,7 +119,8 @@ namespace COM.TIGER.TASK.Task
             try { }
             finally
             {
-                GC.Collect();
+                if (disposing)
+                    GC.Collect();
             }
         }
     }
