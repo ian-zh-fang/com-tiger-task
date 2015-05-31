@@ -91,6 +91,7 @@ namespace COM.TIGER.TASK.DAT.Synchronization.GPSTask
             {
                 string query = "select DeviceID,OfficerID,CarNum from Pgis_GpsDevice";
                 List<Officer> officers = db.ExecuteEntities<Officer>(query);
+                OFFICERCACHE.Clear();
                 OFFICERCACHE.AddRange(officers);
                 return CacheOfficer(gpsid, db, false);
             }

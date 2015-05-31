@@ -225,7 +225,7 @@
         <group>SyncJobTriggerGroup</group>
         <job-name>GPSJob</job-name>
         <job-group>GpsJobGroup</job-group>
-        <cron-expression>0/30 * * * * ?</cron-expression>
+        <cron-expression>0 0/1 * * * ?</cron-expression>
       </cron>
     </trigger>
 

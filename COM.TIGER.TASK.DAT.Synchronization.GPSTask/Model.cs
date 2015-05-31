@@ -24,15 +24,15 @@ namespace COM.TIGER.TASK.DAT.Synchronization.GPSTask
         /// </summary>
         public string GpsID { get; set; }
 
-        /// <summary>
-        /// 方向；(样式：305)
-        /// </summary>
-        public string Dir { get; set; }
+        ///// <summary>
+        ///// 方向；(样式：305)
+        ///// </summary>
+        //public string Dir { get; set; }
 
-        /// <summary>
-        /// 速度（样式：23）
-        /// </summary>
-        public string Speed { get; set; }
+        ///// <summary>
+        ///// 速度（样式：23）
+        ///// </summary>
+        //public string Speed { get; set; }
 
         /// <summary>
         /// 经度 （样式：106.821363）
