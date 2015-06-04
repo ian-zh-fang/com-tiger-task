@@ -109,7 +109,7 @@
     </job>
 
     <!--触发器 每30秒执行一次任务，一键报警-->
-    <!--<trigger>
+    <trigger>
       <cron>
         <name>JobTrigger1</name>
         <group>SyncJobTriggerGroup</group>
@@ -117,10 +117,10 @@
         <job-group>YJBJJobGroup</job-group>
         <cron-expression>0/30 * * * * ?</cron-expression>
       </cron>
-    </trigger>-->
+    </trigger>
     
     <!--触发器 每30秒执行一次任务，三台合一-->
-    <!--<trigger>
+    <trigger>
       <cron>
         <name>JobTrigger2</name>
         <group>SyncJobTriggerGroup</group>
@@ -128,10 +128,10 @@
         <job-group>JCJJJDBJobGroup</job-group>
         <cron-expression>0/30 * * * * ?</cron-expression>
       </cron>
-    </trigger>-->
+    </trigger>
 
     <!--触发器 每天午夜11:30执行一次任务，暂住人口-->
-    <!--<trigger>
+    <trigger>
       <cron>
         <name>JobTrigger3</name>
         <group>SyncJobTriggerGroup</group>
@@ -139,10 +139,10 @@
         <job-group>PJJobGroup</job-group>
         <cron-expression>0 30 22 * * ?</cron-expression>
       </cron>
-    </trigger>-->
+    </trigger>
 
     <!--触发器 每天午夜11:00执行一次任务，境外人口-->
-    <!--<trigger>
+    <trigger>
       <cron>
         <name>JobTrigger4</name>
         <group>SyncJobTriggerGroup</group>
@@ -150,10 +150,10 @@
         <job-group>PJJobGroup</job-group>
         <cron-expression>0 0 23 * * ?</cron-expression>
       </cron>
-    </trigger>-->
+    </trigger>
 
     <!--触发器 每天午夜11:15执行一次任务，实有人口-->
-    <!--<trigger>
+    <trigger>
       <cron>
         <name>JobTrigger5</name>
         <group>SyncJobTriggerGroup</group>
@@ -161,7 +161,7 @@
         <job-group>PJJobGroup</job-group>
         <cron-expression>0 15 23 * * ?</cron-expression>
       </cron>
-    </trigger>-->
+    </trigger>
 
     <!--触发器 每周五凌晨00:00执行一次任务，单位信息-->
     <!--<trigger>
@@ -208,7 +208,7 @@
     </trigger>-->
 
     <!--触发器 每天凌晨01:00执行一次任务，案事件-->
-    <!--<trigger>
+    <trigger>
       <cron>
         <name>JobTrigger10</name>
         <group>SyncJobTriggerGroup</group>
@@ -216,9 +216,9 @@
         <job-group>AJJBXXJobGroup</job-group>
         <cron-expression>0 0 1 * * ?</cron-expression>
       </cron>
-    </trigger>-->
+    </trigger>
 
-    <!--触发器 每30秒执行一次任务，三台合一-->
+    <!--触发器 每30秒执行一次任务，GPS-->
     <trigger>
       <cron>
         <name>GpsJobTrigger</name>

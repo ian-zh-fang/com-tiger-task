@@ -90,7 +90,7 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
                 ParseString(JJDBH), TypeID.ToString(), 
                 ParseString(TypeName), ParseString(BJDH), 
                 ParseString(BJRXM), ParseString(SFDD),
-                string.Format("'{0}'", p.X),string.Format("'{0}'", p.Y),
+                string.Format("'{0}'", p.Y),string.Format("'{0}'", p.X),
                 ParseString(str), ParseString(JJDBH)
             };
 
