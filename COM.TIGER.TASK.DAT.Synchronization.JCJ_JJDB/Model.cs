@@ -75,10 +75,10 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
 
         public string InsertCmd()
         {
-            double x = 0.0d, y = 0.0d;
-            double.TryParse(GIS_X, out x);
-            double.TryParse(GIS_Y, out y);
-            Point p = EPoint2ELatLng(x, y);
+            //double x = 0.0d, y = 0.0d;
+            //double.TryParse(GIS_X, out x);
+            //double.TryParse(GIS_Y, out y);
+            //Point p = EPoint2ELatLng(x, y);
 
             var fields = new string[] 
             {
@@ -90,7 +90,7 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JCJ_JJDB
                 ParseString(JJDBH), TypeID.ToString(), 
                 ParseString(TypeName), ParseString(BJDH), 
                 ParseString(BJRXM), ParseString(SFDD),
-                string.Format("'{0}'", p.Y),string.Format("'{0}'", p.X),
+                GIS_X,GIS_Y,
                 ParseString(str), ParseString(JJDBH)
             };
 
