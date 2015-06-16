@@ -44,8 +44,8 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JWRK
             string fname, lname, country, cardtype, cardno, validate, visanum, visadate, entrydate, receivepersion, tel;
             SetValues(out fname, out lname, out country, out cardtype, out cardno, out validate, out visanum, out visadate, out entrydate, out receivepersion, out tel);
 
-            var fields = new string[] { "PoID", "FirstName", "LastName", "CountryID", "Country", "CardTypeID", "CardTypeName", "CardNo", "ValidityDate", "VisaNoAndValidity", "StayValidityDate", "EntryDate", "ReceivePerson", "Phone", "Token" };
-            var values = new string[] { PoID.ToString(), fname, lname, CountryID.ToString(), country, CardTypeID.ToString(), cardtype, cardno, validate, visanum, visadate, entrydate, receivepersion, tel, ParseString(YWBH) };
+            var fields = new string[] { "PoID", "FirstName", "LastName", "CountryID", "Country", "CardTypeID", "CardTypeName", "CardNo", "VisaTypeID", "VisaTypeName", "ValidityDate", "VisaNoAndValidity", "StayValidityDate", "EntryDate", "ReceivePerson", "Phone", "Token" };
+            var values = new string[] { PoID.ToString(), fname, lname, CountryID.ToString(), country, CardTypeID.ToString(), cardtype, cardno, CardTypeID.ToString(), cardtype, validate, visanum, visadate, entrydate, receivepersion, tel, ParseString(YWBH) };
 
             return Insert(fields, values);
         }
@@ -97,6 +97,8 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JWRK
                 string.Format("CardTypeID = {0}", CardTypeID),
                 string.Format("CardTypeName = {0}", cardtype),
                 string.Format("CardNo = {0}", cardno),
+                string.Format("VisaTypeID = {0}", CardTypeID),
+                string.Format("VisaTypeName = {0}", cardtype),
                 string.Format("ValidityDate = {0}", validate),
                 string.Format("VisaNoAndValidity = {0}", visanum),
                 string.Format("StayValidityDate = {0}", visadate),
