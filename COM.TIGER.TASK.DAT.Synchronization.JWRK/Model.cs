@@ -50,6 +50,31 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JWRK
             return Insert(fields, values);
         }
 
+        public string InsertPopulationBasicInfoCmd()
+        {
+            string fname, lname, country, cardtype, cardno, validate, visanum, visadate, entrydate, receivepersion, tel;
+            SetValues(out fname, out lname, out country, out cardtype, out cardno, out validate, out visanum, out visadate, out entrydate, out receivepersion, out tel);
+
+            var fields = new string[] 
+            {
+                "Name", "LiveTypeID", "LiveType", "CardNo", "Telephone1", "token"
+            };
+            var values = new string[] 
+            {
+                ParseString(string.Format("{0}_{1}",fname, lname)), "3", "境外人口", cardno, tel, ParseString(YWBH)
+            };
+
+            return Insert(fields, values);
+        }
+
+        public string GetPopulationIdCmd()
+        {
+            string fname, lname, country, cardtype, cardno, validate, visanum, visadate, entrydate, receivepersion, tel;
+            SetValues(out fname, out lname, out country, out cardtype, out cardno, out validate, out visanum, out visadate, out entrydate, out receivepersion, out tel);
+
+            return string.Format("select id from Pgis_PopulationBasicInfo where CardNo = '{0}'", cardno);
+        }
+
         public string ExistCmd()
         {
             var tokenfield = "AP_ID";

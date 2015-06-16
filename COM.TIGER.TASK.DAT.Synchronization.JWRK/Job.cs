@@ -19,6 +19,18 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JWRK
             base.Executed(dbFrom, dbTarget, dataFromCmdString);
         }
 
+        private int CheckPopId(Model t, Dao.DataHandler db)
+        {
+            var obj = db.ExecuteScalar(t.GetPopIDCmd());
+            if (obj == null)
+            {
+                db.ExecuteNonQuery(t.InsertPopulationBasicInfoCmd());
+                obj = db.ExecuteScalar(t.GetPopIDCmd());
+            }
+
+            return obj == null ? 0 : int.Parse(string.Format("{0}", obj));
+        }
+
         protected override void Executed(Model t, Dao.DataHandler dbTarget)
         {
             Console.WriteLine(t.ToString());
@@ -28,8 +40,10 @@ namespace COM.TIGER.TASK.DAT.Synchronization.JWRK
                 t.CountryID = CheckParam(dbTarget, t.GJDQ, null, 22);
 
                 //校验人员ID
-                t.PoID = GetPopulationID(t.ZJHM, dbTarget);
-                dbTarget.ExecuteNonQuery(t.UpdateRJCmd(t.PoID));
+                t.PoID = CheckPopId(t, dbTarget);
+
+                //校验签证类型
+                t.CardTypeID = CheckParam(dbTarget, t.ZJZL, null, 21);
 
                 var obj = dbTarget.ExecuteScalar(t.ExistCmd());
                 if (obj == null)
