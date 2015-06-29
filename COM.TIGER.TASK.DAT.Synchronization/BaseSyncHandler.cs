@@ -119,6 +119,7 @@ namespace COM.TIGER.TASK.DAT.Synchronization
                     var obj = reader.GetValue(i);
                     if (obj != null)
                     {
+                        obj = Convert.ChangeType(obj, property.PropertyType);
                         property.SetValue(t, obj, null);
                     }
                 }
